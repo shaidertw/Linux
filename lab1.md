@@ -78,6 +78,56 @@ Linux 5.13.0-28-generic (ubuntu) 	15.02.2022 	_x86_64_	(2 CPU)
 19:41:06     all    3,52    0,60    3,52    0,05    0,00    0,16    0,00    0,00    0,00   92,14
 19:41:06       0    3,45    0,61    3,60    0,04    0,00    0,16    0,00    0,00    0,00   92,15
 19:41:06       1    3,61    0,58    3,44    0,06    0,00    0,16    0,00    0,00    0,00   92,14
+```  
++ Информация о процессоре
+```bash
+shaidertw@ubuntu:~$ lscpu
+Архитектура:                     x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Порядок байт:                    Little Endian
+Address sizes:                   43 bits physical, 48 bits virtual
+CPU(s):                          2
+On-line CPU(s) list:             0,1
+Потоков на ядро:                 1
+Ядер на сокет:                   1
+Сокетов:                         2
+NUMA node(s):                    1
+ID прроизводителя:               GenuineIntel
+Семейство ЦПУ:                   6
+Модель:                          142
+Имя модели:                      Intel(R) Core(TM) i3-7020U CPU @ 2.30GHz
+Степпинг:                        10
+CPU МГц:                         2303.997
+BogoMIPS:                        4607.99
+Разработчик гипервизора:         VMware
+Тип виртуализации:               полный
+L1d cache:                       64 KiB
+L1i cache:                       64 KiB
+L2 cache:                        512 KiB
+L3 cache:                        6 MiB
+NUMA node0 CPU(s):               0,1
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX unsupported
+Vulnerability L1tf:              Mitigation; PTE Inversion
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT Host state unknown
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and sec
+                                 comp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitiz
+                                 ation
+Vulnerability Spectre v2:        Mitigation; Full generic retpoline, IBPB conditional, IBRS_FW, 
+                                 STIBP disabled, RSB filling
+Vulnerability Srbds:             Unknown: Dependent on hypervisor status
+Vulnerability Tsx async abort:   Not affected
+Флаги:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov p
+                                 at pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp
+                                  lm constant_tsc arch_perfmon nopl xtopology tsc_reliable nonst
+                                 op_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid s
+                                 se4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave a
+                                 vx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault
+                                  invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bm
+                                 i1 avx2 smep bmi2 invpcid rdseed adx smap clflushopt xsaveopt x
+                                 savec xsaves arat md_clear flush_l1d arch_capabilities
+
 ```
 
 
