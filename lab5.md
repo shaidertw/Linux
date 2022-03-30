@@ -4,3 +4,8 @@
 2) r - - - w- - - x
 3) - - x - w - r - - 
 ```
+```bash
+1) chmod u=rwx, go=r
+   chmod 744
+
+```
