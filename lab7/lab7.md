@@ -39,3 +39,20 @@ shaidertw@ubuntu:~$ if [ -n "$VAR" ]; then
 /home/shaidertw
 ```
 
+***9. Что выведет на экран этот сценарий?***
+```bash
+shaidertw@ubuntu:~$ A=1
+shaidertw@ubuntu:~$ B=2
+shaidertw@ubuntu:~$ if [ $A -eq $B  ]; then
+>  echo '$A'
+> else
+>  echo "$B"
+> fi 
+2
+```
+
+
+
+
+
+
