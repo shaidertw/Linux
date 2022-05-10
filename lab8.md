@@ -24,3 +24,5 @@ crontab jobs
 ```bash
 mount
 ```
+
+*Практика*  
