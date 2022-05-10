@@ -27,5 +27,22 @@ mount
 
 *Практика*  
 
-***Продемонстрировать работу at по запуску задачи записи в файл произвольной строки
-продемонстрировать работу cron по запуску задачи записи в файл произвольной строки*** 
+***Продемонстрировать работу at по запуску задачи записи в файл произвольной строки,
+продемонстрировать работу cron по запуску задачи записи в файл произвольной строки***  
+**at**
+```bash
+shaidertw@ubuntu:~$ at 17:51
+warning: commands will be executed using /bin/sh
+at> date > file
+at> <EOT>
+job 2 at Tue May 10 17:51:00 2022
+```
+
+***cron***
+```bash
+shaidertw@ubuntu:~$ cat jobs
+* * * * * date > /home/shaidertw/date.txt
+shaidertw@ubuntu:~$ crontab jobs
+shaidertw@ubuntu:~$ crontab -l
+* * * * * date > /home/shaidertw/date.txt
+```
