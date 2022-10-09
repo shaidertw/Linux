@@ -155,19 +155,19 @@ shaidertw@my-virtual-machine:~$ echo $PATH
 shaidertw@my-virtual-machine:~$ export PATH=$PATH:/opt/local/bin
 ```
 
-***3. Продемонстрировать перенаправление вывода в файл ***   
+***3. Продемонстрировать перенаправление вывода в файл***   
 
 ```bash
 shaidertw@my-virtual-machine:~$ echo "some text" > file.txt
 ```
 
-***4. вызвать команду с ошибкой и перенаправить вывод ошибки в файл ***  
+***4. вызвать команду с ошибкой и перенаправить вывод ошибки в файл***  
 
 ```bash
 shaidertw@my-virtual-machine:~$ ls -lz 2> error.txt
 ```
 
-***5. Перенаправить стандартный ввод в программу ***  
+***5. Перенаправить стандартный ввод в программу***  
 
 ```bash
 shaidertw@my-virtual-machine:~$ cat < error.txt
@@ -175,7 +175,7 @@ ls: invalid option -- 'z'
 Try 'ls --help' for more information.
 ```
 
-***6. Cоздать архив, распаковать архив ***
+***6. Cоздать архив, распаковать архив***
 
 ```bash
 shaidertw@my-virtual-machine:~$ tar -cf archive.tar temp/
