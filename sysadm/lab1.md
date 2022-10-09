@@ -37,4 +37,4 @@ __init__.py  models.py  parser.py  settings.py
 ```bash
 shaidertw@my-virtual-machine:~/kaleva.fi.auth$ cp requirements.txt{,.backup}
 shaidertw@my-virtual-machine:~/kaleva.fi.auth$ mv requirements.txt.backup requirements.txt
-``
+```
