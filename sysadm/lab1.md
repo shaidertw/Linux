@@ -103,3 +103,77 @@ ff61ec5aba1c   654261a86208   "/bin/sh -c 'git clo…"   2 weeks ago   Exited (1
                     youthful_feistel
 (END)
 ```
+
+```bash
+shaidertw@my-virtual-machine:~$ find / -type d -name shaidertw
+/home/shaidetw
+```
+```bash
+shaidertw@my-virtual-machine:~$ tail -f /var/log/syslog
+Oct  9 19:09:00 my-virtual-machine systemd[1]: phpsessionclean.service: Succeeded.
+Oct  9 19:09:00 my-virtual-machine systemd[1]: Finished Clean php session files.
+Oct  9 19:09:01 my-virtual-machine CRON[96816]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Oct  9 19:12:10 my-virtual-machine systemd[1]: Starting Ubuntu Advantage Timer for running repeated jobs...
+Oct  9 19:12:10 my-virtual-machine systemd[1]: ua-timer.service: Succeeded.
+Oct  9 19:12:10 my-virtual-machine systemd[1]: Finished Ubuntu Advantage Timer for running repeated jobs.
+Oct  9 19:15:01 my-virtual-machine CRON[96845]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Oct  9 19:17:01 my-virtual-machine CRON[96888]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Oct  9 19:25:02 my-virtual-machine CRON[96959]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Oct  9 19:25:50 my-virtual-machine nordvpnd[697]: 2022/10/09 19:25:50 quic transport needs reconnect, err: timeout: no recent network activity
+```
+
+```bash
+shaidertw@my-virtual-machine:~/asterisk$ ls -l | sort -k9
+total 4
+drwxr-xr-x 2 root root 4096 Mar  4  2022 configs
+-rw-r--r-- 1 root root    0 Mar  4  2022 Dockerfile
+```
+
+```bash
+shaidertw@my-virtual-machine:~$ which python
+/usr/bin/python
+```
+
+```bash
+shaidertw@my-virtual-machine:~$ curl https://github.com/mozilla/geckodriver/tags | grep -Po 'v[0]+.[0-9]+.[0-9]+'| head -1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  183k    0  183k    0     0   178k      0 --:--:--  0:00:01 --:--:--  178k
+v0.31.0
+```
+
+```bash
+shaidertw@my-virtual-machine:~$ file docker-compose.yaml
+docker-compose.yaml: ASCII text
+```
+
+***2. Показать содержимое path, добавить в path дополнительный путь***  
+```bash
+shaidertw@my-virtual-machine:~$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+shaidertw@my-virtual-machine:~$ export PATH=$PATH:/opt/local/bin
+```
+
+***3. Продемонстрировать перенаправление вывода в файл ***  
+```bash
+shaidertw@my-virtual-machine:~$ echo "some text" > file.txt
+```
+
+***4. вызвать команду с ошибкой и перенаправить вывод ошибки в файл ***  
+```bash
+shaidertw@my-virtual-machine:~$ ls -lz 2> error.txt
+```
+
+***5. Перенаправить стандартный ввод в программу ***  
+```bash
+shaidertw@my-virtual-machine:~$ cat < error.txt
+ls: invalid option -- 'z'
+Try 'ls --help' for more information.
+```
+
+***6. Cоздать архив, распаковать архив
+```bash
+shaidertw@my-virtual-machine:~$ tar -cf archive.tar temp/
+shaidertw@my-virtual-machine:~$ tar -xvf archive.tar
+```
